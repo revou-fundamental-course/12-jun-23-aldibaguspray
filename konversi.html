@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1> Konversi Suhu Sederhana tp tdk</h1>     
+    </header>
+    <br><label>Tabel Rumus Suhu Celcius Reamur Kelvin Dan Fahrenheit</label>
+    <table border="1">
+        <tr id="ganti">
+            <td id="gganti"></td>
+            <td>Celcius</td>
+            <td>Reamur</td>
+            <td>Kelvin</td>
+            <td>Fahrenheit</td>
+        </tr>
+        <tr>
+            <td id="ganti">Celcius</td>
+            <td></td>
+            <td>R=(4/5)C</td>
+            <td>K=C+273</td>
+            <td>F=(9/5)C+32</td>
+        </tr>
+        <tr>
+            <td id="ganti">Reamur</td>
+            <td>C=(5/4)R</td>
+            <td></td>
+            <td>K=(5/4)R+273</td>
+            <td>F=(9/4)R+32</td>
+        </tr>
+        <tr>
+            <td id="ganti">Kelvin</td>
+            <td>C=K-273</td>
+            <td>R=4/5(K-273)</td>
+            <td></td>
+            <td>F=9/5(K-273)+32</td>
+        </tr>
+        <tr>
+            <td id="ganti">Fahrenheit</td>
+            <td>C=5/9(F-32)</td>
+            <td>R=4/9(F-32)</td>
+            <td>K=5/9(F-32)+273</td>
+            <td></td>
+        </tr>
+        
+        
+        
+    </table>
+    <section class="inputsct">     
+        <p></p>
+        <label for="txtinput">Piihlah Suhu yang akan di konversi terlebih dahulu, kemudian masukan nilai yang akan dikonversi dan tekan tombol konversi untuk melihat hasil dari nilai suhu yang anda konversi, tekan Reset untuk menghapus, tekan Reverse untuk membalik suhu misal dari Celcius ke Kelvin menjadi Kelvin Ke Celcius</label>
+        
+        <div class="txt">
+            <select id="sct" name="sct">
+                <optgroup label="Celcius">
+                    <option value="txtcf">Celcius Ke Fahrenheit</option>
+                    <option value="txtck">Celcius Ke Kelvin</option>
+                    <option value="txtcr">Celcius Ke Reamur</option>
+                    </optgroup>
+                <optgroup label="Fahrenheit">
+                    <option value="txtfc">Fahrenheit Ke Celcius</option>
+                    <option value="txtfk">Fahrenheit Ke Kelvin</option>
+                    <option value="txtfr">Fahrenheit Ke Reamur</option>
+                    </optgroup>
+                <optgroup label="Kelvin">
+                    <option value="txtkc">Kelvin Ke Celcius</option>
+                    <option value="txtkf">Kelvin Ke Fahrenheit</option>
+                    <option value="txtkr">Kelvin Ke Reamur</option>
+                </optgroup>
+                <optgroup label="Reamur">
+                    <option value="txtrc">Reamur Ke Celcius</option>
+                    <option value="txtrf">Reamur Ke Fahrenheit</option>
+                    <option value="txtrk">Reamur Ke Kelvin</option>
+                </optgroup>
+            </select>
+        <input type="number" id="txtinput" placeholder="Masukan Nilai suhu"  >
+        
+    </div>
+        <div class="btninput">
+        <button id="reverse" onclick="balik()">Reverse</button>
+        <button id="reset" onclick="hapus()">Reset</button>
+        <button id="konversi" onclick="hasilkonversi()">Konversi</button>
+       
+    </div>
+    <label id="lbl">Hasil Dari Konversi Suhu </label>
+    <textarea class="txthasil" id="txthasil" name="txthasil" class="txthasil" readonly></textarea>
+    <p>
+    <span class="d" hidden></span>
+    <span class="txthasil"></span>
+    </p>
+    <fieldset>
+        <legend>Hasil Lain</legend>
+        <div id="aa">
+        <label id="lhasil1">Hasil lain Pertama</label><br>
+        <textarea class="hasil1" id="hasil1" name="hasil1" class="hasil1" readonly></textarea>
+    </div>
+    <div>
+        <label id="lhasil2">Hasil lain Kedua</label><br>       
+        <textarea class="hasil2" id="hasil2" name="hasil2" class="hasil2" readonly></textarea>
+        </div>
+    </fieldset>
+    </section>
+        
+ 
+    <script src="./js/konversi.js"></script>
+</body>
+</html>

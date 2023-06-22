@@ -1,0 +1,167 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+header {
+    background-color: darkturquoise;
+    text-align: center;
+    font-size: medium;
+  
+    padding: 10px 20px;
+    color: aliceblue;
+    border-radius: 2px;
+}
+label {
+  font-size: medium;
+  font-weight: bold;
+   
+}
+.inputsct {
+    display: flex;
+    flex-direction: column;
+ 
+}
+#txtinput:focus{
+    border :solid darkturquoises;
+}
+#txtinput {
+    
+    outline: none;
+       font-size: medium;
+       border-radius: 8px;
+       border: solid darkturquoise;
+       padding: 10px;
+       width: 64%;
+       margin-left: 10px;
+       
+       
+}
+#sct{
+      
+    outline: none;
+       font-size: medium;
+       border-radius: 8px;
+       border: solid turquoise;
+       padding: 10px;
+       width: 36%;
+       
+}
+button{
+    border-radius: 4px;
+    padding: 15px 20px;
+    background-color: turquoise;
+    margin-top: 4px;
+    cursor: pointer;
+    
+}
+button:active{
+    transform: translateY(1px);
+}
+button:hover{
+    background-color: darkturquoise;
+}
+#reverse{
+    width: 17%;
+
+    margin-right: 4px;
+}
+#reset{
+    width: 17%;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+#konversi{
+    width: 66%;
+    margin-left: 4px;
+
+
+}
+.btninput{
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+select{
+    padding: 10px;
+    
+    
+}
+select:focus{
+    border :solid rgb(2, 162, 165);
+}
+select:hover{
+    background-color: skyblue;
+}
+.txt{
+    display: flex;
+    flex-direction: row;
+}
+
+#txthasil {
+    resize: none;
+   
+       font-size: medium;
+       border-radius: 8px;
+     
+       padding: 10px;
+       
+}
+#txtdetail {  
+    outline: none;
+       font-size: medium;
+       border-radius: 8px;
+       border: solid turquoise;
+       padding: 10px;       
+}
+#btnhasil{
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: turquoise;
+    margin-top: 4px;
+    cursor: pointer;
+    width: 15%;
+    
+}
+
+#hasil1 {
+    resize: none;
+   
+       font-size: medium;
+       border-radius: 8px;
+       
+       padding: 10px;
+       width: 97%;
+       
+}
+#hasil2 {
+    resize: none;
+    
+       font-size: medium;
+       border-radius: 8px;
+     
+       padding: 10px;
+       width: 97%;
+       
+}
+
+fieldset{
+    font-size: large;
+    font-weight: bolder;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+    color: black;
+    font-style: normal;
+    width: 100%;
+   
+}
+#ganti{
+    background-color: turquoise;
+}
+#gganti{
+    background-color: darkturquoise;
+}
