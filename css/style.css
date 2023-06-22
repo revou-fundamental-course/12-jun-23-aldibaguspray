@@ -60,7 +60,7 @@ button:active{
     transform: translateY(1px);
 }
 button:hover{
-    background-color: darkturquoise;
+    background-color: rgb(2, 85, 87);
 }
 #reverse{
     width: 17%;
