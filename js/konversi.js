@@ -1,9 +1,9 @@
-
-function hasilkonversi(){      
+function hasilkonversi(){     
+   
     hitung = document.querySelector('#sct');
     output = hitung.options[hitung.selectedIndex].value;
     yy =document.getElementById("txtinput").value;
-  
+    
     var cf = (9/5)*parseFloat(yy)+32;
     var ck = 273+parseFloat(yy);
     var cr = 4/5*parseFloat(yy);
@@ -16,6 +16,12 @@ function hasilkonversi(){
     var rc = (5/4)*parseFloat(yy);
     var rf =(9/4)*parseFloat(yy)+32;
     var rk = (5/4)*parseFloat(yy)+273;
+    var bil = parseFloat(yy);
+    if(isNaN(bil)){
+      alert("Masukan Nilai Terlebih Dahulu");
+      }
+    else{
+    
     switch (output) {
       case "txtcf": 
       document.getElementById('lbl').innerHTML ='Hasil Konversi Suhu Celcius Ke Farenheit Adalah Adalah '+cf+'F';
@@ -123,10 +129,11 @@ function hasilkonversi(){
       default:
         console.log("ERROR");
         break;
+      }
     }
-  }
+    }
   
-   
+
   
   function hapus(){
     document.getElementById("txtinput").value="0";
@@ -156,7 +163,8 @@ function hasilkonversi(){
     var rc = (5/4)*parseFloat(yy);
     var rf =(9/4)*parseFloat(yy)+32;
     var rk = (5/4)*parseFloat(yy)+273;
-    if(yy=null){
+    var bil = parseFloat(yy);
+    if(isNaN(yy)){
       document.getElementById("txtinput").value="0";
     document.getElementById("txthasil").innerHTML="";
     document.getElementById("hasil1").innerHTML="";
@@ -289,4 +297,3 @@ function hasilkonversi(){
   
   
   }
-  
